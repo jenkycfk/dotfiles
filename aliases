@@ -7,5 +7,49 @@ alias gs='git status'
 alias rmc='sudo rm core.*'
 alias rmr='sudo rm -r'
 
+alias gb='git branch'
+alias gl='git log --decorate'
+alias gco='git checkout'
+alias gci='git commit'
+alias gps='git push'
+alias gpl='git pull'
+alias gd="git diff"
+alias gs='git status'
+
+alias ll='ls -alFrth'
+alias l='ls -alshrt'
+alias la='ls -A'
+alias l='ls -tr'
+alias wh='which'
+alias s='source'
+alias v='vi'
+alias h='history'
+alias up='cd ..'
+alias up2='cd ../..'
+alias up3='cd ../../..'
+alias up4='cd ../../../..'
+alias sls='screen -ls'
+alias aptinst='sudo apt-get install'
+alias ldc='export LD_LIBRARY_PATH=`pwd`:$LD_LIBRARY_PATH'
+alias tka='tmux ls | grep : | cut -d. -f1 | awk -F : '\''{print $1}'\'' | xargs tmux kill-session -t'
+alias tls='tmux ls'
+alias tk='tmux kill-session -t'
+alias tat='tmux at -t'
+
+## git command
+alias gb='git branch'
+alias gl='git log --decorate'
+alias gco='git checkout'
+alias ga="git add"
+alias gci='git commit -m '
+alias gps='git push'
+alias gpl='git pull'
+alias gd="git diff"
+alias gs='git status'
+
+#### for changfukun
+alias cd_07='cd /mnt/data/changfukun/megsdk_202007/megsdk-test/'
+alias cfk_fmt="clang-format --assume-filename=.clang-format -i "
+
 # Include custom aliases
 [[ -f ~/.aliases.local ]] && source ~/.aliases.local
